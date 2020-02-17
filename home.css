@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Crimson Text', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #2a131c;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2a131c;
+}
+
+nav {
+  height: 40vh;
+  background-image: url(assets/lotus.jpg);
+  background-size: cover;
+  background-position-y: 60%;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+.logo {
+  position: absolute;
+  bottom: -1.7em;
+  margin: 0 1em;
+  height: 15vh;
+  display: inline-block;
+  z-index: 5;
+  border-radius: 100%;
+  -webkit-box-shadow: 5px 5px 15px #2a131c;
+          box-shadow: 5px 5px 15px #2a131c;
+}
+
+.flex-nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  bottom: 0;
+  height: 5vh;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #d793ba;
+  -webkit-box-shadow: 0 3px 10px gray;
+          box-shadow: 0 3px 10px gray;
+}
+
+.flex-nav .nav-links {
+  padding: 0 .5em;
+  margin: 0 1em;
+  display: inline-block;
+  color: #81325d;
+  text-shadow: 0 0 5px white;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.flex-nav .nav-links:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  scale: 1.1;
+  font-size: 1.3em;
+  color: #2a131c;
+}
+
+.flex-nav .nav-social {
+  padding: .5em;
+  margin: .5em;
+  color: white;
+}
+/*# sourceMappingURL=home.css.map */

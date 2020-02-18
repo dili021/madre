@@ -5,6 +5,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #2a131c;
+  background: #dceed1;
 }
 
 ul {
@@ -20,7 +21,7 @@ nav {
   height: 40vh;
   background-image: url(assets/lotus.jpg);
   background-size: cover;
-  background-position-y: 60%;
+  background-position-y: 50%;
   position: relative;
   margin-bottom: 3em;
 }
@@ -79,5 +80,63 @@ nav {
   padding: .5em;
   margin: .5em;
   color: white;
+}
+
+.massages {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[7] 2fr;
+  -ms-grid-columns: 2fr (1fr)[4];
+      grid-template: repeat(7, 1fr) 2fr/2fr repeat(4, 1fr);
+  height: 500px;
+  grid-auto-flow: column;
+  margin: 2em 10em;
+}
+
+.massages img {
+  color: #87b38d;
+}
+
+.massages h1 {
+  grid-column: 1 / -1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.massages > * {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-column: 1 / -1;
+  -ms-grid-columns: 6fr (1fr)[4];
+      grid-template-columns: 6fr repeat(4, 1fr);
+  place-items: start;
+}
+
+.massages .madero {
+  margin-top: 1em;
+  -ms-grid-columns: 3fr (1fr)[3];
+      grid-template-columns: 3fr repeat(3, 1fr);
+}
+
+.massages .madero .box-head {
+  text-align: center;
+}
+
+.massages .madero :nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.massages .madero :nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+}
+
+.duration {
+  font-weight: bolder;
+  color: #81325d;
 }
 /*# sourceMappingURL=home.css.map */

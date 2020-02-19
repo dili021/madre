@@ -1,5 +1,4 @@
 body {
-  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -153,7 +152,8 @@ nav {
   transition: .3s;
 }
 
-.fa-bars {
+.mobile .fa-bars {
+  display: none;
   position: relative;
   bottom: 1.4em;
   padding: .2em .5em;
@@ -246,11 +246,11 @@ nav {
   nav {
     height: 200px;
   }
-  .flex-nav .fa-bars {
-    display: block;
-  }
-  .flex-nav .nav-links {
+  nav .flex-nav .nav-links {
     display: none;
+  }
+  .mobile .fa-bars {
+    display: block;
   }
 }
 

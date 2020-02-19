@@ -47,6 +47,7 @@ nav {
 .owner {
   font-size: 2.3em;
   margin: 5px 3em;
+  color: #87b38d;
 }
 
 .headline {
@@ -55,18 +56,17 @@ nav {
   text-align: center;
   color: #6b6765;
   margin: .3em;
+  text-shadow: 1px 3px 5px gray;
 }
 
 .logo {
   position: absolute;
-  bottom: -1.7em;
+  bottom: -2.3em;
   margin: 0 1em;
-  height: 15vh;
+  height: 20vh;
   display: inline-block;
   z-index: 5;
   border-radius: 100%;
-  -webkit-box-shadow: 5px 5px 15px #2a131c;
-          box-shadow: 5px 5px 15px #2a131c;
 }
 
 .flex-nav {
@@ -82,7 +82,7 @@ nav {
   bottom: 0;
   height: 5vh;
   margin: 0;
-  padding: 0 2em;
+  padding: 0 3em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -92,7 +92,7 @@ nav {
 }
 
 .flex-nav .nav-links {
-  padding: 0 .5em;
+  padding: 0 .9em;
   margin: 0 1em;
   display: inline-block;
   color: #81325d;
@@ -131,7 +131,18 @@ nav {
       grid-template: repeat(7, 1fr) 2fr/2fr repeat(4, 1fr);
   height: 10%;
   grid-auto-flow: column;
-  margin: 2em 10em;
+  padding: 1em;
+  margin: 2em 5em;
+}
+
+.massages p {
+  font-size: 1.7em;
+}
+
+.massages > :nth-child(odd) {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(#a6c7ab), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #a6c7ab, rgba(255, 255, 255, 0));
+  color: #81325d;
 }
 
 .massages img {
@@ -139,9 +150,13 @@ nav {
 }
 
 .massages h1 {
-  grid-column: 1 / -1;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 100%;
 }
 
 .massages > * {
@@ -161,20 +176,17 @@ nav {
   place-items: center;
 }
 
+.massages .madero > :nth-child(4n+1) {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.massages .madero .purp {
+  color: #81325d;
+}
+
 .massages .madero .box-head {
   text-align: center;
-}
-
-.massages .madero :nth-child(2) {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-}
-
-.massages .madero :nth-child(3) {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
 }
 
 .duration {

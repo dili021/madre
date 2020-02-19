@@ -1,4 +1,6 @@
 body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Crimson Text', serif;
@@ -21,11 +23,39 @@ a {
 
 nav {
   height: 60vh;
-  background-image: url(assets/lotus.jpg);
-  background-size: cover;
+  background: center/cover url(assets/lotus.jpg);
   background-position-y: 48%;
   position: relative;
-  margin-bottom: 1em;
+}
+
+#toggle {
+  display: none;
+  position: relative;
+  bottom: 2.8em;
+  right: 2.9em;
+}
+
+.m-nav {
+  display: none;
+  text-align: center;
+  position: relative;
+  bottom: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4em;
+  line-height: 2.5em;
+  background: #2a131c;
+}
+
+#toggle:checked ~ .m-nav {
+  display: block;
+}
+
+.mob-links {
+  display: block;
+  color: #d793ba;
+  width: 100%;
+  border-bottom: 2px solid #81325d;
 }
 
 .jumbo {
@@ -46,7 +76,7 @@ nav {
 
 .owner {
   font-size: 2.3em;
-  margin: 5px 3em;
+  margin: 1em 3em 5px 3em;
   color: #87b38d;
 }
 
@@ -80,7 +110,7 @@ nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
   bottom: 0;
-  height: 5vh;
+  height: 45px;
   margin: 0;
   padding: 0 3em;
   -webkit-box-align: center;
@@ -123,12 +153,21 @@ nav {
   transition: .3s;
 }
 
+.fa-bars {
+  position: relative;
+  bottom: 1.4em;
+  padding: .2em .5em;
+  display: none;
+  color: #81325d;
+  cursor: pointer;
+}
+
 .massages {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (80px)[7] 1fr;
+  -ms-grid-rows: (80px)[6] 1fr;
   -ms-grid-columns: 2fr (1fr)[4];
-      grid-template: repeat(7, 80px) 1fr/2fr repeat(4, 1fr);
+      grid-template: repeat(6, 80px) 1fr/2fr repeat(4, 1fr);
   height: 10%;
   grid-auto-flow: column;
   width: 50%;
@@ -137,8 +176,9 @@ nav {
 }
 
 .massages p {
-  font-size: 1.4em;
-  padding: .3em;
+  font-size: 1.3em;
+  padding: .4em;
+  text-align: center;
 }
 
 .massages > :nth-child(even) {
@@ -181,6 +221,10 @@ nav {
   place-items: center;
 }
 
+.massages .madero :first-child {
+  font-size: 1.2em;
+}
+
 .massages .madero > :nth-child(4n+1) {
   -ms-grid-column-align: start;
       justify-self: start;
@@ -198,10 +242,50 @@ nav {
   white-space: nowrap;
 }
 
+@media (max-width: 576px) {
+  nav {
+    height: 200px;
+  }
+  .flex-nav .fa-bars {
+    display: block;
+  }
+  .flex-nav .nav-links {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
+  nav {
+    background-position: center;
+  }
+  nav .logo {
+    display: none;
+  }
+  nav .flex-nav {
+    padding: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .flex-nav .nav-links {
+    padding: .2em;
+    margin: 0;
+  }
   .massages {
     margin: 1em;
     width: 90%;
+    font-size: .8em;
+  }
+  .massages h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 991px) {
+  nav .flex-nav {
+    padding: 0;
+  }
+  nav .flex-nav .nav-links {
+    margin: .3em;
   }
 }
 /*# sourceMappingURL=home.css.map */

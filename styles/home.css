@@ -1,7 +1,8 @@
 body {
+  position: relative;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 3em 0;
   font-family: 'Crimson Text', serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,6 +21,36 @@ a {
   color: #2a131c;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #2a131c;
+  text-align: center;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+footer .social-links {
+  color: white;
+  margin: 0 2em;
+  padding: 1em;
+  white-space: nowrap;
+}
+
 .form {
   text-justify: auto;
   padding: 2em;
@@ -32,9 +63,47 @@ a {
   padding: .4em;
 }
 
+main {
+  padding: 3em 1em;
+}
+
+.massages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.massage-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3em auto;
+}
+
+.massage-box img {
+  margin: 1em;
+  width: 600px;
+  height: auto;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 2em gray;
+          box-shadow: 0 0 2em gray;
+}
+
+.massage-box .massage-text h3 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.massage-box .massage-text p {
+  font-size: 1.3em;
+  padding: 1em;
+}
+
 nav {
   height: 60vh;
-  background: center/cover url(assets/lotus.jpg);
+  background: center/cover url(../assets/lotus.jpg);
   background-position: center;
   position: relative;
 }
@@ -178,7 +247,7 @@ nav {
   cursor: pointer;
 }
 
-.massages {
+.prices {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (80px)[6] 1fr;
@@ -191,23 +260,23 @@ nav {
   margin: 2em auto;
 }
 
-.massages p {
+.prices p {
   font-size: 1.3em;
   padding: .4em;
   text-align: center;
 }
 
-.massages > :nth-child(even) {
+.prices > :nth-child(even) {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(#a6c7ab), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #a6c7ab, rgba(255, 255, 255, 0));
   color: #81325d;
 }
 
-.massages img {
+.prices img {
   color: #87b38d;
 }
 
-.massages h1 {
+.prices h1 {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -webkit-box-align: center;
@@ -217,7 +286,7 @@ nav {
   width: 100%;
 }
 
-.massages > * {
+.prices > * {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
@@ -230,27 +299,27 @@ nav {
           align-items: baseline;
 }
 
-.massages .madero {
+.prices .madero {
   margin-top: 1em;
   -ms-grid-columns: 3fr (1fr)[3];
       grid-template-columns: 3fr repeat(3, 1fr);
   place-items: center;
 }
 
-.massages .madero :first-child {
+.prices .madero :first-child {
   font-size: 1.2em;
 }
 
-.massages .madero > :nth-child(4n+1) {
+.prices .madero > :nth-child(4n+1) {
   -ms-grid-column-align: start;
       justify-self: start;
 }
 
-.massages .madero .purp {
+.prices .madero .purp {
   color: #81325d;
 }
 
-.massages .madero .box-head {
+.prices .madero .box-head {
   text-align: center;
 }
 
@@ -258,28 +327,13 @@ nav {
   white-space: nowrap;
 }
 
-footer {
-  background: #2a131c;
-  text-align: center;
-}
-
-footer .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-}
-
-footer .social-links {
-  color: white;
-  margin: 0 1em;
-  margin: 1em;
-  white-space: nowrap;
+@media (max-width: 991px) {
+  nav .flex-nav {
+    padding: 0;
+  }
+  nav .flex-nav .nav-links {
+    margin: .3em;
+  }
 }
 
 @media (max-width: 767px) {
@@ -293,26 +347,63 @@ footer .social-links {
   nav .flex-nav .nav-links {
     display: none;
   }
+  .owner {
+    margin: .5em auto;
+  }
+  .headline {
+    font-size: 3em;
+  }
   .mobile .fa-bars {
     display: block;
     width: 20px;
   }
-  .massages {
+  .prices {
     margin: 2em 1em;
     width: 90%;
     font-size: .8em;
   }
-  .massages h2 {
+  .prices h2 {
     font-size: 1.2em;
+  }
+  .massage-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .massage-box img {
+    width: 100%;
+    margin: 0;
+  }
+  .massage-box .massage-text h3 {
+    margin: 1em;
+    color: #81325d;
+  }
+  .massage-box .massage-text p {
+    padding: 0;
   }
 }
 
-@media (max-width: 991px) {
-  nav .flex-nav {
-    padding: 0;
+@media (max-width: 500px) {
+  .jumbo {
+    margin: 0 auto;
   }
-  nav .flex-nav .nav-links {
+  .headline {
+    font-size: 2.4em;
+  }
+  .owner {
     margin: .3em;
+  }
+  .prices .madero .box-title {
+    font-size: .9em;
+    text-align: start;
+  }
+  footer .social {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .social .social-links {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=home.css.map */

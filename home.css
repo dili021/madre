@@ -23,15 +23,15 @@ a {
 nav {
   height: 60vh;
   background: center/cover url(assets/lotus.jpg);
-  background-position-y: 48%;
+  background-position: center;
   position: relative;
 }
 
 #toggle {
   display: none;
   position: relative;
-  bottom: 2.8em;
-  right: 2.9em;
+  bottom: 5em;
+  left: 1em;
 }
 
 .m-nav {
@@ -152,6 +152,10 @@ nav {
   transition: .3s;
 }
 
+.mobile {
+  height: 0;
+}
+
 .mobile .fa-bars {
   display: none;
   position: relative;
@@ -242,36 +246,39 @@ nav {
   white-space: nowrap;
 }
 
-@media (max-width: 576px) {
+footer {
+  background: #2a131c;
+  text-align: center;
+}
+
+footer .social {
+  margin: 0 auto;
+  padding: 1em;
+}
+
+footer .social-links {
+  color: white;
+  margin: 0 1em;
+  padding: 1em;
+}
+
+@media (max-width: 767px) {
   nav {
     height: 200px;
+  }
+  nav .logo {
+    right: 0;
+    margin: 0;
   }
   nav .flex-nav .nav-links {
     display: none;
   }
   .mobile .fa-bars {
     display: block;
-  }
-}
-
-@media (max-width: 767px) {
-  nav {
-    background-position: center;
-  }
-  nav .logo {
-    display: none;
-  }
-  nav .flex-nav {
-    padding: 0;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  nav .flex-nav .nav-links {
-    padding: .2em;
-    margin: 0;
+    width: 20px;
   }
   .massages {
-    margin: 1em;
+    margin: 2em 1em;
     width: 90%;
     font-size: .8em;
   }

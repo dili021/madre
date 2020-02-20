@@ -20,6 +20,20 @@ a {
   color: #2a131c;
 }
 
+form {
+  height: 500px;
+}
+
+.form {
+  padding: 2em;
+  text-align: center;
+}
+
+[for=review] {
+  font-size: 1.5em;
+  color: #81325d;
+}
+
 nav {
   height: 60vh;
   background: center/cover url(assets/lotus.jpg);

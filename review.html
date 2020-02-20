@@ -25,7 +25,7 @@
                     <a class="nav-links" href="">About</a>
                 </li>
                 <li>
-                    <a class="nav-links" href="">Massages</a>
+                    <a class="nav-links" href="massages.html">Massages</a>
                 </li>
                 <li>
                     <a class="nav-links" href="">Reviews</a>
@@ -48,7 +48,7 @@
                 <a class="mob-links" href="#">About</a>
             </li>
             <li>
-                <a class="mob-links" href="#">Massages</a>
+                <a class="mob-links" href="massages.html">Massages</a>
             </li>
             <li>
                 <a class="mob-links" href="#">Reviews</a>
@@ -66,14 +66,15 @@
         <form name="contact" method="POST" data-netlify="true">
             <label for="review">Leave a review</label>
             <p>
-                <label>Your Name: <input type="text" name="name" /></label>
+                <label>Name: <input type="text" placeholder="your name" name="name" /></label>
             </p>
             <p>
-                <label>Your Email: <input type="email" name="email" /></label>
+                <label>Email: <input type="email" placeholder="optional" name="email" /></label>
             </p>
 
             <p>
-                <label>Message: <textarea name="message"></textarea></label>
+                <label class='review-text'>Message: <textarea placeholder="Write your review here"
+                        name="message"></textarea></label>
             </p>
             <p>
                 <button type="submit">Send</button>
@@ -84,7 +85,7 @@
     <footer>
         <div class="social">
             <a class="social-links" href=""><i class="fa fa-facebook"></i></a>
-            <a class="social-links" href=""><i class="fa fa-envelope"></i></a>
+            <a class="social-links" href="mailto:winalite.ns@gmail.com"><i class="fa fa-envelope"></i></a>
         </div>
     </footer>
 </body>

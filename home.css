@@ -264,14 +264,22 @@ footer {
 }
 
 footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
-  padding: 1em;
 }
 
 footer .social-links {
   color: white;
   margin: 0 1em;
-  padding: 1em;
+  margin: 1em;
+  white-space: nowrap;
 }
 
 @media (max-width: 767px) {

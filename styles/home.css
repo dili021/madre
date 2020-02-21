@@ -51,16 +51,11 @@ footer .social-links {
   white-space: nowrap;
 }
 
-.form {
-  text-justify: auto;
-  padding: 2em;
-  text-align: center;
-  color: #81325d;
-  font-size: 1.5em;
-}
-
-.form [name=message] {
-  padding: .4em;
+.button {
+  margin: 2em auto;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 main {
@@ -85,10 +80,12 @@ main {
 .massage-box img {
   margin: 1em;
   width: 600px;
-  height: auto;
+  height: 300px;
   border-radius: 1em;
   -webkit-box-shadow: 0 0 2em gray;
           box-shadow: 0 0 2em gray;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .massage-box .massage-text h3 {
@@ -192,7 +189,7 @@ nav {
   bottom: 0;
   height: 45px;
   margin: 0;
-  padding: 0 3em;
+  padding: 0 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -202,8 +199,7 @@ nav {
 }
 
 .flex-nav .nav-links {
-  padding: 0 .9em;
-  margin: 0 1em;
+  margin: 0 1.5em;
   display: inline-block;
   color: #81325d;
   text-shadow: 0 0 5px white;
@@ -219,18 +215,9 @@ nav {
   color: #2a131c;
 }
 
-.flex-nav .nav-social {
-  padding: .5em;
-  margin: .5em;
-  color: white;
-  display: inline-block;
-}
-
-.flex-nav .nav-social:hover {
-  text-shadow: 0 0 3px white;
-  scale: 1.2;
-  -webkit-transition: .3s;
-  transition: .3s;
+.flex-nav .book {
+  color: #f42272;
+  font-size: 1.4em;
 }
 
 .mobile {
@@ -328,11 +315,8 @@ nav {
 }
 
 @media (max-width: 991px) {
-  nav .flex-nav {
-    padding: 0;
-  }
   nav .flex-nav .nav-links {
-    margin: .3em;
+    margin: 1em;
   }
 }
 

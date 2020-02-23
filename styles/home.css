@@ -234,6 +234,20 @@ nav {
   cursor: pointer;
 }
 
+.adress {
+  line-height: 1.4em;
+}
+
+.adress ul {
+  padding: 0 1.8em;
+  margin: 0;
+}
+
+.adress h2 {
+  margin: 0;
+  padding: .5em;
+}
+
 .prices {
   display: -ms-grid;
   display: grid;

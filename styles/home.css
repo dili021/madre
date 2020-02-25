@@ -79,7 +79,7 @@ main {
 
 .massage-box img {
   margin: 1em;
-  width: 600px;
+  min-width: 400px;
   height: 300px;
   border-radius: 1em;
   -webkit-box-shadow: 0 0 2em gray;
@@ -88,14 +88,22 @@ main {
      object-fit: cover;
 }
 
+.massage-box .massage-text {
+  padding: 0;
+}
+
 .massage-box .massage-text h3 {
+  color: #81325d;
   text-align: center;
   font-size: 2em;
+  padding: 0;
+  margin: .4em;
 }
 
 .massage-box .massage-text p {
   font-size: 1.3em;
-  padding: 1em;
+  padding: .5em;
+  margin: 0;
 }
 
 nav {
@@ -375,7 +383,6 @@ nav {
   }
   .massage-box .massage-text h3 {
     margin: 1em;
-    color: #81325d;
   }
   .massage-box .massage-text p {
     padding: 0;

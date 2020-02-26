@@ -1,6 +1,6 @@
 > My mom's massage parlor website
 
-![screenshot](assets/Screenshot_2020-02-26 Studio-Dili.png)
+![screenshot](assets/screenshot.png)
 
 
 # Built With

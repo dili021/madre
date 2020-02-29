@@ -70,6 +70,21 @@ main {
       flex-wrap: wrap;
 }
 
+.massages h1 {
+  display: block;
+  font-size: 3em;
+  color: #81325d;
+  margin: 0 auto;
+}
+
+.massages > h2 {
+  margin: 1em 4em;
+}
+
+.massages > h2 ul {
+  list-style-type: disc;
+}
+
 .massage-box {
   display: -webkit-box;
   display: -ms-flexbox;

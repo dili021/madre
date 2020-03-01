@@ -238,11 +238,6 @@ nav {
   color: #2a131c;
 }
 
-.flex-nav .book {
-  color: #f42272;
-  font-size: 1.4em;
-}
-
 .mobile {
   height: 0;
 }
@@ -351,9 +346,19 @@ nav {
   white-space: nowrap;
 }
 
-@media (max-width: 991px) {
+.address {
+  float: left;
+  margin: 0 5em 0 0;
+}
+
+.book {
+  color: #f42272 !important;
+  font-size: 1.4em !important;
+}
+
+@media (max-width: 1060px) {
   nav .flex-nav .nav-links {
-    margin: 1em;
+    margin: .9em;
   }
 }
 

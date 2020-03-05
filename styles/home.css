@@ -125,7 +125,7 @@ span {
 }
 
 nav {
-  height: 60vh;
+  height: 50vh;
   background: center/cover url(../assets/lotus.jpg);
   background-position: center;
   position: relative;
@@ -270,7 +270,10 @@ nav {
 }
 
 .reviews {
-  position: relative;
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  right: 0;
   width: 214.75px;
   text-align: center;
   margin: 5em auto;
@@ -444,7 +447,7 @@ iframe {
 
 @media (max-width: 1060px) {
   nav .flex-nav .nav-links {
-    margin: .9em;
+    margin: .6em;
   }
 }
 

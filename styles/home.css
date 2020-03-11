@@ -423,11 +423,23 @@ iframe {
   color: #f42272 !important;
 }
 
+.yoga-photo {
+  margin: 1em;
+  min-width: 400px;
+  height: 300px;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 2em gray;
+          box-shadow: 0 0 2em gray;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
 .yoga {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
+  width: 600px;
+  display: inline-block;
+  position: relative;
+  margin: 1em;
 }
 
 .yoga h2 {
@@ -454,7 +466,6 @@ iframe {
 }
 
 .yoga p, .yoga li {
-  font-size: 1.2em;
   font-family: 'Caladea', serif;
   list-style-type: disc;
   max-width: 700px;
@@ -509,6 +520,11 @@ iframe {
   }
   .massages h2 {
     margin: .5em;
+  }
+  .yoga-photo {
+    min-width: 0;
+    width: 100%;
+    margin: 0;
   }
   .massage-box {
     -webkit-box-orient: vertical;

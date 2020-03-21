@@ -368,7 +368,7 @@ nav {
 
 .details {
   float: left;
-  margin: 3em 1em 2em 1em;
+  margin: 0 1em 2em 1em;
 }
 
 .details h2 {
@@ -392,6 +392,7 @@ nav {
 .about-me {
   max-width: 500px;
   font-family: 'Caladea', serif;
+  font-size: 1.1em;
 }
 
 .about-me p {

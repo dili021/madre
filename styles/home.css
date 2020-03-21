@@ -284,6 +284,10 @@ nav {
   margin: 5em auto;
 }
 
+.placeholder {
+  height: 200px;
+}
+
 .prices {
   display: -ms-grid;
   display: grid;

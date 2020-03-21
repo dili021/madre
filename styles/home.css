@@ -170,6 +170,7 @@ nav {
 }
 
 .line, .sub-line {
+  margin-top: 4em;
   height: 10px;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(#81325d), to(rgba(255, 255, 255, 0)));
@@ -182,8 +183,9 @@ nav {
 }
 
 .owner {
-  font-size: 2.3em;
-  margin: 1em 3em 5px 3em;
+  font-size: 2em;
+  text-align: end;
+  margin: .5em 3em 5px 3em;
   color: #87b38d;
 }
 
@@ -452,7 +454,7 @@ iframe {
   display: inline-block;
   position: relative;
   font-size: 1.1em;
-  margin: 1em;
+  margin: 0 1em;
 }
 
 .yoga h2 {

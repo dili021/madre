@@ -75,7 +75,7 @@ main {
 
 .massages ul {
   list-style-type: disc;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 0 3em;
 }
 
@@ -189,7 +189,7 @@ nav {
 
 .headline {
   font-family: 'great vibes', cursive;
-  font-size: 4em;
+  font-size: 2.3em;
   text-align: center;
   color: #6b6765;
   margin: .3em;
@@ -509,7 +509,7 @@ iframe {
     margin: .5em auto;
   }
   .headline {
-    font-size: 3em;
+    font-size: 2em;
   }
   .mobile .fa-bars {
     display: block;
@@ -569,7 +569,8 @@ iframe {
     margin: 0 auto;
   }
   .headline {
-    font-size: 2.4em;
+    margin-top: .7em;
+    font-size: 1.9em;
   }
   .owner {
     margin: .3em;

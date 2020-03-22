@@ -197,6 +197,7 @@ nav {
 .logo {
   position: absolute;
   scale: 1.4;
+  transform: scale(1.4);
   bottom: -2.3em;
   margin: 0 1em;
   height: 20vh;
@@ -549,6 +550,10 @@ iframe {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .yoga h2 {
+    position: relative;
+    bottom: 10.5em;
   }
   .yoga-photo {
     min-width: 0;

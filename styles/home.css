@@ -196,7 +196,6 @@ nav {
 
 .logo {
   position: absolute;
-  scale: 1.4;
   transform: scale(1.4);
   bottom: -2.3em;
   margin: 0 1em;

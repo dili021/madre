@@ -2,7 +2,7 @@ body {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 0 0 3em 0;
+  padding: 0 0 5em 0;
   font-family: 'Crimson Text', serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -52,6 +52,7 @@ footer .social-links {
 }
 
 .massages {
+  padding: 1em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,6 +391,10 @@ nav {
   text-decoration: underline;
 }
 
+.book {
+  color: #f42272 !important;
+}
+
 .about-me {
   max-width: 500px;
   font-family: 'Caladea', serif;
@@ -418,10 +423,6 @@ iframe {
   top: 0;
   left: 0;
   border: 0;
-}
-
-.book {
-  color: #f42272 !important;
 }
 
 .yoga-photo {
@@ -492,17 +493,31 @@ iframe {
     height: 200px;
   }
   nav .logo {
-    right: 0;
+    right: 2em;
     margin: 0;
   }
   nav .flex-nav .nav-links {
     display: none;
   }
+  .line, .sub-line {
+    margin-bottom: 2em;
+  }
+  .sub-line {
+    margin-top: 4em;
+  }
+  .frame-box {
+    margin: 1.5em;
+  }
   .about-me {
     max-width: 90%;
+    padding: 1em;
+  }
+  .contact {
+    margin: 0 1em;
   }
   .owner {
     margin: .5em auto;
+    position: initial;
   }
   .headline {
     font-size: 2em;
@@ -539,7 +554,7 @@ iframe {
     min-width: 0;
     top: 2.2em;
     width: 100%;
-    margin: 2em 0;
+    margin: 2.7em 0;
   }
   .massage-box {
     -webkit-box-orient: vertical;
@@ -550,7 +565,7 @@ iframe {
   .massage-box img {
     min-width: 0;
     width: 100%;
-    margin: 0;
+    margin: 2em 0;
   }
   .massage-box .massage-text h3 {
     margin: 1em;

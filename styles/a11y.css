@@ -1,0 +1,15 @@
+/* Hide All Elements With Language Attribute */
+html body p:lang(en),
+html body p:lang(es) {
+  display: none;
+}
+
+/* Enable Elements That Are English */
+html:lang(en) p:lang(en) {
+  display: initial;
+}
+
+/* Enable Elements That Are Spanish */
+html:lang(es) p:lang(es) {
+  display: initial;
+}

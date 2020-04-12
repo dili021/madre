@@ -5,16 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/a11y.css">
     <link rel="stylesheet" href="styles/home.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Studio-Dili</title>
-
 </head>
 
 <body>
+    <!-- Language Switcher -->
+    <label for="langauge">Choose a language:</label>
+    <select id="langauge" name="langauge" onchange="switchLanguage()">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+    </select>
+    <script>
+        function switchLanguage() {
+            // Get The Value From `select` Element
+            const language = document.getElementById("langauge").value;
+            // Set The Document lang To The Language User Selected.
+            document.documentElement.lang = language;
+        }
+    </script>
+
     <header>
         <div class="header-top">
         </div>
@@ -78,17 +93,30 @@
     <main>
         <div class="details">
             <div class="about-me">
-                <p>
+                <!-- English Version -->
+                <p lang="en">
                     Natasha Dili entered the world of bio-energy at the age of 13, next to her father who was a
                     bio-energy therapist, and with whom she trained and developed her skill. On her road of
                     development, the inclusion of yoga and massage
                     seemed
                     natural, due to their deep interconnectedness.
                 </p>
-                <p>
+                <!-- Spanish Version -->
+                <p lang="es">
+                    Natasha Dili ingresó al mundo de la bioenergía a los 13 años, junto a su padre, que era un
+                    terapeuta de bioenergía, y con quien ella entrenó y desarrolló su habilidad. En su camino de
+                    desarrollo, la inclusión de yoga y masajes parecía natural, debido a su profunda interconexión.
+                </p>
+
+                <p lang="en">
                     Natasha is a professional massage therapist, bio-energy therapist and yoga instructor. <br>
                     She lives and
                     works on Gran Canaria, Spain.
+                </p>
+                <p lang="es">
+                    Natasha es terapeuta de masaje profesional, terapeuta de bioenergía e instructora de yoga. <br>
+                    Ella vive y
+                    trabaja en Gran Canaria, España.
                 </p>
             </div>
             <div class="info">

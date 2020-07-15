@@ -1,19 +1,16 @@
-> Title 
+> Website for a massage salon on Gran Canaria 
 
-![screenshot]()
+![screenshot](https://user-images.githubusercontent.com/55356496/87537781-7c8bf900-c69b-11ea-96f5-d12643b829de.png)
+)
 
 
 # Built With
+- HTML5 & CSS3
 
 
 
-
-# Live Demo
-
-[Live Demo Link]()
-
-# Getting Started
-
+# Visit
+[Link](https://studio-dili.com)
 
 
 # Prerequisites
@@ -31,11 +28,6 @@
 - Install Node JS and nmp(most recents versions)
 ## Stylelint (CSS linter) installation
 - Run this command on your terminal in order to install stylelint: npm install stylelint stylelint-config-recommended --save-dev
-
-### Run tests
-
-- Test the css by typing the command: npx stylelint .
-- Go to http://validator.w3.org/ , upload the index.html file to test it.
 
 ### Deployment
 
@@ -61,8 +53,3 @@ Contributions, issues and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-
-## 📝 License

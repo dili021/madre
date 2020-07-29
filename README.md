@@ -26,8 +26,10 @@
 
 - Install VSCode or any code editor you like
 - Install Node JS and nmp(most recents versions)
-## Stylelint (CSS linter) installation
-- Run this command on your terminal in order to install stylelint: npm install stylelint stylelint-config-recommended --save-dev
+## Testing with Stylelint
+- Run this command on your terminal in order to install stylelint `npm install stylelint stylelint-config-recommended --save-dev`
+- Now run `npx stylelint .` while in the root directory.
+
 
 ### Deployment
 

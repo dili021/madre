@@ -1,117 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/home.css">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crimson+Text:400i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Write a review</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-top">
-        </div>
-        <nav>
-            <img class='logo' src="assets/2020-logo.(1).svg" alt="logo">
-            <ul class="flex-nav">
-                <li>
-                    <a class="nav-links" href="home.html">Ingles</a>
-                </li>
-                <li>
-                    <a class="nav-links" href="home_s.html">Inicio</a>
-                </li>
-                <li>
-                    <a class="nav-links" href="massages_s.html">Masajes</a>
-                </li>
-                <li>
-                    <a class="nav-links" href="yoga_s.html">Yoga</a>
-                </li>
-                <li>
-                    <a class="nav-links" href="pricing_s.html">Precios</a>
-                </li>
-                <li>
-                    <a class="nav-links" href="review_s.html">Comentario</a>
-                </li>
-                <li>
-                    <a class="nav-links book" href="tel:+34%20638%20293956">Pide una cita</a>
-                </li>
-            </ul>
-
-        </nav>
+      <div class="header-top"></div>
+      <nav>
+        <img class="logo" src="assets/2020-logo.(1).svg" alt="logo" />
+        <ul class="flex-nav">
+          <li class="lang-btn">
+            <a class="nav-links" href="review.html"
+              ><img src="assets/united-kingdom-flag-round-icon-32.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a class="nav-links" href="home_s.html">Inicio</a>
+          </li>
+          <li>
+            <a class="nav-links" href="massages_s.html">Masajes</a>
+          </li>
+          <li>
+            <a class="nav-links" href="yoga_s.html">Yoga</a>
+          </li>
+          <li>
+            <a class="nav-links" href="pricing_s.html">Precios</a>
+          </li>
+          <li>
+            <a class="nav-links" href="review_s.html">Comentario</a>
+          </li>
+          <li>
+            <a class="nav-links book" href="tel:+34%20638%20293956"
+              >Pide una cita</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <nav class="mobile">
-        <label for="toggle"><i class="fab fa fa-2x fa-bars"></i></label>
-        <input type="checkbox" name="mobile menu" id="toggle">
-        <ul class="m-nav">
-            <li>
-                <a class="mob-links" href="home.html">Ingles</a>
-            </li>
-            <li>
-                <a class="mob-links" href="home_s.html">Inicio</a>
-            </li>
-            <li>
-                <a class="mob-links" href="massages_s.html">Masajes</a>
-            </li>
-            <li>
-                <a class="mob-links" href="yoga_s.html">Yoga</a>
-            </li>
-            <li>
-                <a class="mob-links" href="pricing_s.html">Precios</a>
-            </li>
-            <li>
-                <a class="mob-links" href="review_s.html">Comentario</a>
-            </li>
-            <li>
-                <a class="mob-links book" href="tel:+34%20638%20293956">Pide una cita</a>
-            </li>
-        </ul>
+      <label for="toggle"><i class="fab fa fa-2x fa-bars"></i></label>
+      <input type="checkbox" name="mobile menu" id="toggle" />
+      <ul class="m-nav">
+        <li>
+          <a class="mob-links" href="home.html">Ingles</a>
+        </li>
+        <li>
+          <a class="mob-links" href="home_s.html">Inicio</a>
+        </li>
+        <li>
+          <a class="mob-links" href="massages_s.html">Masajes</a>
+        </li>
+        <li>
+          <a class="mob-links" href="yoga_s.html">Yoga</a>
+        </li>
+        <li>
+          <a class="mob-links" href="pricing_s.html">Precios</a>
+        </li>
+        <li>
+          <a class="mob-links" href="review_s.html">Comentario</a>
+        </li>
+        <li>
+          <a class="mob-links book" href="tel:+34%20638%20293956"
+            >Pide una cita</a
+          >
+        </li>
+      </ul>
     </nav>
 
     <div class="reviews">
-        <div class="embedsocial-collect button" data-ref="289622f01e1158387fd5"> </div>
-        <script>
-            (function (d, s, id) {
-                var js;
-                if (d.getElementById(id)) {
-                    return;
-                }
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "https://embedsocial.com/cdn/cs.js?v=2.0";
-                d.getElementsByTagName("head")[0].appendChild(js);
-            }(document, "script", "EmbedSocialReviewsCollectScript"));
-        </script>
+      <div
+        class="embedsocial-collect button"
+        data-ref="289622f01e1158387fd5"
+      ></div>
+      <script>
+        (function (d, s, id) {
+          var js;
+          if (d.getElementById(id)) {
+            return;
+          }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://embedsocial.com/cdn/cs.js?v=2.0";
+          d.getElementsByTagName("head")[0].appendChild(js);
+        })(document, "script", "EmbedSocialReviewsCollectScript");
+      </script>
 
-        <div class='embedsocial-reviews' data-ref="6d83c12109e2c0edd666ad2c9ba9a66664b7a12d"></div>
-        <script>
-            (function (d, s, id) {
-                var js;
-                if (d.getElementById(id)) {
-                    return;
-                }
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "https://embedsocial.com/embedscript/ri.js";
-                d.getElementsByTagName("head")[0].appendChild(js);
-            }(document, "script", "EmbedSocialReviewsScript"));
-        </script>
+      <div
+        class="embedsocial-reviews"
+        data-ref="6d83c12109e2c0edd666ad2c9ba9a66664b7a12d"
+      ></div>
+      <script>
+        (function (d, s, id) {
+          var js;
+          if (d.getElementById(id)) {
+            return;
+          }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://embedsocial.com/embedscript/ri.js";
+          d.getElementsByTagName("head")[0].appendChild(js);
+        })(document, "script", "EmbedSocialReviewsScript");
+      </script>
     </div>
     <footer>
-        <div class="social">
-            <a class="social-links"
-                href="https://www.facebook.com/Studio-DILI-Playa-del-Ingl%C3%A9s-Gran-Canaria-657916071364771/"
-                target="blank"><i class="fa fa-facebook"></i></a>
-            <a class="social-links" href="mailto:winalite.ns@gmail.com"><i class="fa fa-envelope"></i></a>
-            <a class="social-links"
-                href="https://wa.me/34638293956?text=Hello,%20I%20would%20like%20to%20book%20a%20massage"
-                target='blank'><i class="fab fa fa-whatsapp"></i></a>
-        </div>
+      <div class="social">
+        <a
+          class="social-links"
+          href="https://www.facebook.com/Studio-DILI-Playa-del-Ingl%C3%A9s-Gran-Canaria-657916071364771/"
+          target="blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a class="social-links" href="mailto:winalite.ns@gmail.com"
+          ><i class="fa fa-envelope"></i
+        ></a>
+        <a
+          class="social-links"
+          href="https://wa.me/34638293956?text=Hello,%20I%20would%20like%20to%20book%20a%20massage"
+          target="blank"
+          ><i class="fab fa fa-whatsapp"></i
+        ></a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

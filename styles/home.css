@@ -3,12 +3,18 @@ body {
   width: 100%;
   margin: 0;
   padding: 0 0 5em 0;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #2a131c;
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #dceed1), to(#87b38d));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, #dceed1),
+    to(#87b38d)
+  );
   background: linear-gradient(#dceed1 50%, #87b38d);
 }
 
@@ -37,10 +43,10 @@ footer .social {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -57,13 +63,13 @@ footer .social-links {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   line-height: 1.4em;
-  font-family: 'Caladea', serif;
+  font-family: "Caladea", serif;
 }
 
 .massages h1 {
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   display: block;
   font-size: 2.6em;
   color: #81325d;
@@ -102,9 +108,9 @@ span {
   height: 300px;
   border-radius: 1em;
   -webkit-box-shadow: 0 0 2em gray;
-          box-shadow: 0 0 2em gray;
+  box-shadow: 0 0 2em gray;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .massage-box .massage-text {
@@ -117,11 +123,11 @@ span {
   font-size: 2em;
   line-height: 1.2em;
   padding: 0;
-  margin: .4em;
+  margin: 0.4em;
 }
 
 .massage-box .massage-text p {
-  padding: .5em;
+  padding: 0.5em;
   font-size: 1.1em;
   margin: 0;
 }
@@ -166,12 +172,25 @@ nav {
   margin: 0 3em;
 }
 
-.line, .sub-line {
+.line,
+.sub-line {
   margin-bottom: 1em;
   height: 10px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(#81325d), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #81325d, rgba(255, 255, 255, 0));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(255, 255, 255, 0)),
+    color-stop(#81325d),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    #81325d,
+    rgba(255, 255, 255, 0)
+  );
 }
 
 .sub-line {
@@ -180,17 +199,17 @@ nav {
 }
 
 .owner {
-  font-family: 'great vibes', serif;
+  font-family: "great vibes", serif;
   position: relative;
   left: 8em;
 }
 
 .headline {
-  font-family: 'great vibes', cursive;
+  font-family: "great vibes", cursive;
   font-size: 2.3em;
   text-align: center;
   color: #6b6765;
-  margin: .3em;
+  margin: 0.3em;
   text-shadow: 1px 3px 5px gray;
 }
 
@@ -213,18 +232,18 @@ nav {
   right: 0;
   left: 0;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   bottom: 0;
   height: 45px;
   margin: 0;
   padding: 0 1em;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: #d793ba;
   -webkit-box-shadow: 0 3px 10px gray;
-          box-shadow: 0 3px 10px gray;
+  box-shadow: 0 3px 10px gray;
 }
 
 .flex-nav .nav-links {
@@ -237,8 +256,8 @@ nav {
 }
 
 .flex-nav .nav-links:hover {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   scale: 1.1;
   font-size: 1.3em;
   color: #2a131c;
@@ -252,7 +271,7 @@ nav {
   display: none;
   position: relative;
   bottom: 1.4em;
-  padding: .2em .5em;
+  padding: 0.2em 0.5em;
   display: none;
   color: #81325d;
   cursor: pointer;
@@ -269,7 +288,7 @@ nav {
 
 .adress h2 {
   margin: 0;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .reviews {
@@ -289,9 +308,9 @@ nav {
 .prices {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (80px)[6] 1fr;
-  -ms-grid-columns: 2fr (1fr)[4];
-      grid-template: repeat(6, 80px) 1fr/2fr repeat(4, 1fr);
+  -ms-grid-rows: (80px) [6] 1fr;
+  -ms-grid-columns: 2fr (1fr) [4];
+  grid-template: repeat(6, 80px) 1fr/2fr repeat(4, 1fr);
   height: 10%;
   grid-auto-flow: column;
   width: 50%;
@@ -301,13 +320,25 @@ nav {
 
 .prices p {
   font-size: 1.3em;
-  padding: .4em;
+  padding: 0.4em;
   text-align: center;
 }
 
 .prices > :nth-child(even) {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(#a6c7ab), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #a6c7ab, rgba(255, 255, 255, 0));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(255, 255, 255, 0)),
+    color-stop(#a6c7ab),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    #a6c7ab,
+    rgba(255, 255, 255, 0)
+  );
   color: #81325d;
 }
 
@@ -317,10 +348,10 @@ nav {
 
 .prices h1 {
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   justify-items: center;
   width: 100%;
 }
@@ -330,20 +361,20 @@ nav {
   display: grid;
   grid-auto-flow: row;
   grid-column: 1 / -1;
-  -ms-grid-columns: 6fr (1fr)[4];
-      grid-template-columns: 6fr repeat(4, 1fr);
+  -ms-grid-columns: 6fr (1fr) [4];
+  grid-template-columns: 6fr repeat(4, 1fr);
   place-items: start;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .prices .madero {
   margin-top: 1em;
-  -ms-grid-columns: 3fr (1fr)[3];
-      grid-template-columns: 3fr repeat(3, 1fr);
-  -ms-grid-rows: (50px)[4];
-      grid-template-rows: repeat(4, 50px);
+  -ms-grid-columns: 3fr (1fr) [3];
+  grid-template-columns: 3fr repeat(3, 1fr);
+  -ms-grid-rows: (50px) [4];
+  grid-template-rows: repeat(4, 50px);
   place-items: center;
 }
 
@@ -351,9 +382,9 @@ nav {
   font-size: 1.2em;
 }
 
-.prices .madero > :nth-child(4n+1) {
+.prices .madero > :nth-child(4n + 1) {
   -ms-grid-column-align: start;
-      justify-self: start;
+  justify-self: start;
 }
 
 .prices .madero .purp {
@@ -379,11 +410,11 @@ nav {
 
 .details ul {
   margin: 0;
-  padding: .3em;
+  padding: 0.3em;
 }
 
 .book-now {
-  padding: .2em 0;
+  padding: 0.2em 0;
 }
 
 .book-now a {
@@ -397,12 +428,12 @@ nav {
 
 .about-me {
   max-width: 500px;
-  font-family: 'Caladea', serif;
+  font-family: "Caladea", serif;
   font-size: 1.1em;
 }
 
 .about-me p {
-  margin: .3em;
+  margin: 0.3em;
 }
 
 .contact {
@@ -433,9 +464,9 @@ iframe {
   height: 300px;
   border-radius: 1em;
   -webkit-box-shadow: 0 0 2em gray;
-          box-shadow: 0 0 2em gray;
+  box-shadow: 0 0 2em gray;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .yoga-wrap {
@@ -461,7 +492,7 @@ iframe {
 }
 
 .yoga h3 {
-  font-family: 'Caladea', serif;
+  font-family: "Caladea", serif;
   font-size: 1em;
   color: #81325d;
 }
@@ -475,8 +506,9 @@ iframe {
   text-decoration: underline;
 }
 
-.yoga p, .yoga li {
-  font-family: 'Caladea', serif;
+.yoga p,
+.yoga li {
+  font-family: "Caladea", serif;
   list-style-type: disc;
   text-align: justify;
   text-justify: inter-word;
@@ -484,7 +516,7 @@ iframe {
 
 @media (max-width: 1060px) {
   nav .flex-nav .nav-links {
-    margin: .6em;
+    margin: 0.6em;
   }
 }
 
@@ -492,88 +524,118 @@ iframe {
   nav {
     height: 200px;
   }
+
   nav .logo {
     right: 2em;
     margin: 0;
   }
+
   nav .flex-nav .nav-links {
     display: none;
   }
-  .line, .sub-line {
+  nav .flex-nav .lang-btn {
+    position: absolute;
+    left: 80px;
+    bottom: -12px;
+  }
+  nav .flex-nav .lang-btn a {
+    display: block;
+  }
+  .line,
+  .sub-line {
     margin-bottom: 2em;
   }
+
   .sub-line {
     margin-top: 4em;
   }
+
   .frame-box {
     margin: 1.5em;
   }
+
   .about-me {
     max-width: 90%;
     padding: 1em;
   }
+
   .contact {
     margin: 0 1em;
   }
+
   .owner {
-    margin: .5em auto;
+    margin: 0.5em auto;
     position: initial;
   }
+
   .headline {
     font-size: 2em;
   }
+
   .mobile .fa-bars {
     display: block;
     width: 20px;
   }
+
   .prices {
     margin: 2em 1em;
     width: 90%;
-    font-size: .8em;
+    font-size: 0.8em;
   }
+
   .prices h2 {
     font-size: 1.2em;
   }
+
   .details {
     float: none;
     margin: 0;
   }
+
   iframe {
     height: 100%;
   }
+
   .massages h2 {
-    margin: .5em;
+    margin: 0.5em;
   }
+
   .yoga-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   .yoga h2 {
     position: relative;
     bottom: 10.5em;
   }
+
   .yoga-photo {
     min-width: 0;
     top: 2.2em;
     width: 100%;
     margin: 2.7em 0;
   }
+
   .massage-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   .massage-box img {
     min-width: 0;
     width: 100%;
     margin: 2em 0;
   }
+
   .massage-box .massage-text h3 {
     margin: 1em;
   }
+
   .massage-box .massage-text p {
     padding: 0;
   }
@@ -583,38 +645,49 @@ iframe {
   .jumbo {
     margin: 0 auto;
   }
+
   .headline {
-    margin-top: .7em;
+    margin-top: 0.7em;
     font-size: 1.9em;
   }
+
   .owner {
-    margin: .3em;
+    margin: 0.3em;
   }
+
   .frame-box {
     left: 0;
   }
+
   iframe {
     width: 100%;
   }
+
   .about-me {
     max-width: 100%;
   }
+
   .prices .madero .box-title {
-    font-size: .9em;
+    font-size: 0.9em;
     text-align: start;
   }
+
   .massages h2 {
-    margin: .3em 0;
+    margin: 0.3em 0;
   }
+
   .massages ul {
-    padding: .6em;
+    padding: 0.6em;
   }
+
   footer .social {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
+
   footer .social .social-links {
     margin: 0;
   }
 }
+
 /*# sourceMappingURL=home.css.map */
